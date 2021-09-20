@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <property name="LOG_LOCATION" value="c:/temp" />
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} - %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <File>{LOG_LOCATION}/mylog.log</File>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} - %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+    </root>
+    <logger name="consumer" level="trace" additivity="false">
+        <appender-ref ref="FILE" />
+        <appender-ref ref="CONSOLE" />
+    </logger>
+
+</configuration>

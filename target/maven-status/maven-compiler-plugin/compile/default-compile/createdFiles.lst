@@ -1,0 +1,15 @@
+com/test/DocumentKey.class
+com/test/OplogSerializer.class
+com/test/KafkaConsumer$1.class
+com/test/Stock.class
+com/test/KafkaConsumer.class
+com/test/OplogDeserializer.class
+com/test/Inventory.class
+com/test/DbCollection.class
+com/test/ConsumerApplication.class
+com/test/OplogDeserializer$2.class
+com/test/CommThread.class
+com/test/Oplog.class
+com/test/Customer.class
+com/test/OplogDeserializer$1.class
+com/test/OplogSerde.class
